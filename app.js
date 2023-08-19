@@ -11,10 +11,10 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   bodyParser.json({
-    origin: "*",
+    origin: "https://toolbox-online.onrender.com",
   })
 );
-app.use(morgan("tiny"));
+// app.use(morgan("tiny"));
 app.use("/images", express.static(path.join(__dirname, "images")));
 // app.use(express.static("images"));
 
